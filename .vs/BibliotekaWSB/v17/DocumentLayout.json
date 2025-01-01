@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\bibliotekawsb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:bibliotekawsb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,10 +20,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -42,31 +38,36 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
+              "Title": "BibliotekaWSB",
+              "DocumentMoniker": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
+              "RelativeDocumentMoniker": "BibliotekaWSB.csproj",
+              "ToolTip": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
+              "RelativeToolTip": "BibliotekaWSB.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T08:34:38.05Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-01T20:42:18.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\AssemblyInfo.cs",
-              "RelativeToolTip": "AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T08:37:52.971Z",
+              "WhenOpened": "2025-01-01T20:40:51.116Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotekaWSB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61d42d2fdf6c8e3ec411bab1dcac808ad6db33f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c261711947e7baff92a93dece3fb37857d0eb2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotekaWSB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotekaWSB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

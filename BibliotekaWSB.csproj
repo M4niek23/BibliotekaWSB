@@ -9,14 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewsWPFModel\**" />
-    <EmbeddedResource Remove="ViewsWPFModel\**" />
-    <None Remove="ViewsWPFModel\**" />
-    <Page Remove="ViewsWPFModel\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewWPFModel\" />
     <Folder Include="Services\" />
   </ItemGroup>
 

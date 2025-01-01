@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\pat71\source\repos\BibliotekaWSB\obj\Debug\net8.0-windows\
+C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\
 BibliotekaWSB
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\pat71\source\repos\BibliotekaWSB\App.xaml
-11407045341
+C:\Users\pat71\Source\Repos\BibliotekaWSB\App.xaml
+21288554948
 
-19-1014951781
+24-1203761568
 198-1431420039
-MainWindow.xaml;
+ViewsWPFModel\LoginWindow.xaml;ViewsWPFModel\MainWindow.xaml;
 
 False
 
