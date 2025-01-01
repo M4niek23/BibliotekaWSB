@@ -7,15 +7,51 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ViewsWPFModel\BookSearchView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewsWPFModel\ChangePasswordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewsWPFModel\ForgotPasswordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewsWPFModel\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewsWPFModel\MyAccountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewsWPFModel\RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewsWPFModel\RentalHistoryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ViewsWPFModel\BookSearchView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\ChangePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\ForgotPasswordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ViewsWPFModel\LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewsWPFModel\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\MyAccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\RentalHistoryView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\rentalhistoryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\rentalhistoryview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\rentalhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\rentalhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\myaccountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\myaccountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\myaccountview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\myaccountview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\forgotpasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\forgotpasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\forgotpasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\forgotpasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\changepasswordwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\changepasswordwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\booksearchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\booksearchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\booksearchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\booksearchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|c:\\users\\pat71\\source\\repos\\bibliotekawsb\\viewswpfmodel\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00DE17AB-23F3-451E-888E-E44CC94BF566}|BibliotekaWSB.csproj|solutionrelative:viewswpfmodel\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,8 +70,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RentalHistoryView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RentalHistoryView.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\RentalHistoryView.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RentalHistoryView.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\RentalHistoryView.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:54:11.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentalHistoryView.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RentalHistoryView.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\RentalHistoryView.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RentalHistoryView.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\RentalHistoryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:54:03.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\RegisterWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:53:39.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RegisterWindow.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\RegisterWindow.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\RegisterWindow.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\RegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:53:31.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyAccountView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\MyAccountView.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\MyAccountView.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\MyAccountView.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\MyAccountView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:52:54.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyAccountView.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\MyAccountView.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\MyAccountView.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\MyAccountView.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\MyAccountView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:52:42.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ForgotPasswordWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ForgotPasswordWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\ForgotPasswordWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ForgotPasswordWindow.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\ForgotPasswordWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:52:16.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForgotPasswordWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ForgotPasswordWindow.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\ForgotPasswordWindow.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ForgotPasswordWindow.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\ForgotPasswordWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:51:46.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChangePasswordWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ChangePasswordWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\ChangePasswordWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ChangePasswordWindow.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\ChangePasswordWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:50:48.512Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -46,20 +211,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BibliotekaWSB",
+              "DocumentIndex": 8,
+              "Title": "ChangePasswordWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ChangePasswordWindow.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\ChangePasswordWindow.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\ChangePasswordWindow.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\ChangePasswordWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:50:15.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookSearchView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\BookSearchView.xaml.cs",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\BookSearchView.xaml.cs",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\BookSearchView.xaml.cs",
+              "RelativeToolTip": "ViewsWPFModel\\BookSearchView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T20:49:42.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookSearchView.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\BookSearchView.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\BookSearchView.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\BookSearchView.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\BookSearchView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:49:31.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "ViewsWPFModel\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\LoginWindow.xaml",
+              "RelativeToolTip": "ViewsWPFModel\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T20:48:28.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BibliotekaWSB.csproj",
               "DocumentMoniker": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
               "RelativeDocumentMoniker": "BibliotekaWSB.csproj",
               "ToolTip": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
               "RelativeToolTip": "BibliotekaWSB.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-01T20:42:18.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-01T20:42:18.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\ViewsWPFModel\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "ViewsWPFModel\\LoginWindow.xaml.cs",
@@ -69,6 +282,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-01T20:40:51.116Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
