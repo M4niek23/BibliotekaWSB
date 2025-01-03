@@ -4,37 +4,37 @@ Projekt Biblioteka WSB to prosta aplikacja typu desktop (WPF) realizaująca pods
 **Struktura projektu**
   Projekt składa się z następujących folderów i plików źródłowych:
     1. Data – zawiera implementacje repozytoriów bazujących na zapisie i odczycie z plików JSON:
-      - FileBookRepository.cs
-      - FileRentalRepository.cs
-      - FileUserRepository.cs
+      1.1 FileBookRepository.cs
+      1.2 FileRentalRepository.cs
+      1.3 FileUserRepository.cs
     2.Interfaces – zawiera interfejsy definiujące kontrakty dla repozytoriów i serwisów:
-      - IRepository<T>.cs
-      - IBookRepository.cs
-      - IRentalRepository.cs
-      - IUserRepository.cs
+      2.1 IRepository<T>.cs
+      2.2 IBookRepository.cs
+      2.3 IRentalRepository.cs
+      2.4 IUserRepository.cs
     3.Models – zawiera klasy modelowe reprezentujące encje w systemie:
-      - Book.cs
-      - Rental.cs
-      - RentalViewModel.cs
-      - Student.cs
-      - Staff.cs
-      - User.cs
+      3.1 Book.cs
+      3.2 Rental.cs
+      3.3 RentalViewModel.cs
+      3.4 Student.cs
+      3.5 Staff.cs
+      3.6 User.cs
     4. Services – zawiera logikę biznesową aplikacji:
-      - AuthenticationService.cs
-      - BookService.cs
-      - RentalService.cs
-      - UserService.cs
+      4.1 AuthenticationService.cs
+      4.2 BookService.cs
+      4.3 RentalService.cs
+      4.4 UserService.cs
     5.ViewsWPFModel – zawiera warstwę prezentacji (WPF):
       Główne okna:
-      - LoginWindow.xaml / .cs
-      - MainWindow.xaml / .cs
-      - RegisterWindow.xaml / .cs
+      5.1 LoginWindow.xaml / .cs
+      5.2 MainWindow.xaml / .cs
+      5.3 RegisterWindow.xaml / .cs
       Dodatkowe widoki:
-      - BookSearchView.xaml / .cs
-      - ForgotPasswordWindow.xaml / .cs
-      - ChangePasswordWindow.xaml / .cs
-      - MyAccountView.xaml / .cs
-      - RentalHistoryView.xaml / .cs
+      5.4 BookSearchView.xaml / .cs
+      5.5 ForgotPasswordWindow.xaml / .cs
+      5.6 ChangePasswordWindow.xaml / .cs
+      5.7 MyAccountView.xaml / .cs
+      5.8 RentalHistoryView.xaml / .cs
 **Opis działania**
   
   Logowanie:
