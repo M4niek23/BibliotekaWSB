@@ -24,10 +24,16 @@ public partial class ChangePasswordWindow : Window
         string oldPassword = OldPasswordBox.Password;
         string newPassword = NewPasswordBox.Password;
 
+        if (string.IsNullOrWhiteSpace(newPassword) || newPassword.Length < 6)
+        {
+            MessageBox.Show("Nowe hasło musi mieć co najmniej 6 znaków.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
         if (_loggedUser.VerifyPassword(oldPassword))
         {
-            _loggedUser.PasswordHash = newPassword; 
-            _userRepository.Update(_loggedUser);    
+            _loggedUser.PasswordHash = newPassword;
+            _userRepository.Update(_loggedUser);
 
             MessageBox.Show("Hasło zostało pomyślnie zmienione.");
             this.Hide();

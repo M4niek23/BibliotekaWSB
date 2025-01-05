@@ -1,13 +1,5 @@
 [
   {
-    "Id": 3,
-    "Title": "Jane Eyre",
-    "Author": "Charlotte Bront\u00EB",
-    "Availability": 3,
-    "Category": "Klasyka",
-    "Description": "Autobiograficzna powie\u015B\u0107 o losach niezale\u017Cnej i silnej kobiety, kt\u00F3ra stawia czo\u0142a przeciwno\u015Bciom losu i poszukuje mi\u0142o\u015Bci oraz to\u017Csamo\u015Bci."
-  },
-  {
     "Id": 4,
     "Title": "Harry Potter (seria)",
     "Author": "J.K. Rowling",
@@ -22,14 +14,6 @@
     "Availability": 6,
     "Category": "Klasyka",
     "Description": "Poruszaj\u0105ca opowie\u015B\u0107 o rasizmie i niesprawiedliwo\u015Bci w ma\u0142ym miasteczku na po\u0142udniu USA, opowiedziana oczami m\u0142odej dziewczyny Scout."
-  },
-  {
-    "Id": 6,
-    "Title": "Biblia",
-    "Author": "R\u00F3\u017Cni autorzy",
-    "Availability": 4,
-    "Category": "Religia",
-    "Description": "\u015Awi\u0119ta ksi\u0119ga chrze\u015Bcija\u0144stwa, zawieraj\u0105ca Stary i Nowy Testament, b\u0119d\u0105ca fundamentem wiary i moralno\u015Bci dla miliard\u00F3w ludzi na \u015Bwiecie."
   },
   {
     "Id": 7,
@@ -128,22 +112,6 @@
     "Description": "Rozbudowana powie\u015B\u0107 spo\u0142eczna przedstawiaj\u0105ca \u017Cycie mieszka\u0144c\u00F3w fikcyjnego miasteczka Middlemarch, ich ambicje i konflikty."
   },
   {
-    "Id": 21,
-    "Title": "Przemin\u0119\u0142o z wiatrem",
-    "Author": "Margaret Mitchell",
-    "Availability": 7,
-    "Category": "Romans",
-    "Description": "Epicka opowie\u015B\u0107 o Scarlett O\u0027Hara, jej \u017Cyciu podczas wojny secesyjnej i odbudowie Po\u0142udnia, pe\u0142na mi\u0142o\u015Bci, strat i determinacji."
-  },
-  {
-    "Id": 1,
-    "Title": "Duma i uprzedzenie",
-    "Author": "Jane Austen",
-    "Availability": 6,
-    "Category": "Klasyka",
-    "Description": "Historia mi\u0142o\u015Bci Elizabeth Bennet i pana Darcy\u0027ego, pe\u0142na humoru i spo\u0142ecznych komentarzy na temat angielskiej arystokracji ko\u0144ca XVIII wieku."
-  },
-  {
     "Id": 8,
     "Title": "Rok 1984",
     "Author": "George Orwell",
@@ -166,5 +134,37 @@
     "Availability": 4,
     "Category": "Fantastyka",
     "Description": "Epicka saga o przygodach Froda Bagginsa i Dru\u017Cyny Pier\u015Bcienia w walce z mrocznym lordem Sauronem, kt\u00F3ry pragnie odzyska\u0107 pot\u0119\u017Cny Pier\u015Bcie\u0144."
+  },
+  {
+    "Id": 1,
+    "Title": "Duma i uprzedzenie",
+    "Author": "Jane Austen",
+    "Availability": 7,
+    "Category": "Klasyka",
+    "Description": "Historia mi\u0142o\u015Bci Elizabeth Bennet i pana Darcy\u0027ego, pe\u0142na humoru i spo\u0142ecznych komentarzy na temat angielskiej arystokracji ko\u0144ca XVIII wieku."
+  },
+  {
+    "Id": 6,
+    "Title": "Biblia",
+    "Author": "R\u00F3\u017Cni autorzy",
+    "Availability": 4,
+    "Category": "Religia",
+    "Description": "\u015Awi\u0119ta ksi\u0119ga chrze\u015Bcija\u0144stwa, zawieraj\u0105ca Stary i Nowy Testament, b\u0119d\u0105ca fundamentem wiary i moralno\u015Bci dla miliard\u00F3w ludzi na \u015Bwiecie."
+  },
+  {
+    "Id": 21,
+    "Title": "Przemin\u0119\u0142o z wiatrem",
+    "Author": "Margaret Mitchell",
+    "Availability": 7,
+    "Category": "Romans",
+    "Description": "Epicka opowie\u015B\u0107 o Scarlett O\u0027Hara, jej \u017Cyciu podczas wojny secesyjnej i odbudowie Po\u0142udnia, pe\u0142na mi\u0142o\u015Bci, strat i determinacji."
+  },
+  {
+    "Id": 3,
+    "Title": "Jane Eyre",
+    "Author": "Charlotte Bront\u00EB",
+    "Availability": 3,
+    "Category": "Klasyka",
+    "Description": "Autobiograficzna powie\u015B\u0107 o losach niezale\u017Cnej i silnej kobiety, kt\u00F3ra stawia czo\u0142a przeciwno\u015Bciom losu i poszukuje mi\u0142o\u015Bci oraz to\u017Csamo\u015Bci."
   }
 ]

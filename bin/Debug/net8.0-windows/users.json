@@ -82,5 +82,41 @@
     "Role": "Student",
     "StudentNumber": null,
     "Position": null
+  },
+  {
+    "Id": 9,
+    "Username": "OP",
+    "PasswordHash": "patman1",
+    "FullName": "dsadas dsaad",
+    "Email": "p@o.pl",
+    "Phone": "213421412",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 8,
+    "Username": "Maniek",
+    "PasswordHash": "nowehaslo123",
+    "FullName": "Patryk Maniek",
+    "Email": "p@o.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 10,
+    "Username": "Maniek1",
+    "PasswordHash": "maniek1",
+    "FullName": "Patryk Maniek",
+    "Email": "pa@o.pl",
+    "Phone": "1234567890",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
   }
 ]

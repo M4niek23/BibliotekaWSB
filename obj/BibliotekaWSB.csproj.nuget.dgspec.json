@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\BibliotekaWSB.csproj": {}
+    "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\BibliotekaWSB.csproj": {
+    "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
+        "projectUniqueName": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
         "projectName": "BibliotekaWSB",
-        "projectPath": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
+        "projectPath": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\BibliotekaWSB.csproj",
         "packagesPath": "C:\\Users\\pat71\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pat71\\source\\repos\\BibliotekaWSB\\obj\\",
+        "outputPath": "C:\\Users\\pat71\\Source\\Repos\\BibliotekaWSB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -35,6 +35,18 @@ public partial class RegisterWindow : Window
             return;
         }
 
+        if (!IsValidEmail(email))
+        {
+            MessageBox.Show("Nieprawidłowy format adresu e-mail.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (password.Length < 6)
+        {
+            MessageBox.Show("Hasło musi mieć co najmniej 6 znaków.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
         // Sprawdź, czy użytkownik już istnieje
         if (_userRepository.GetByUsername(username) != null)
         {
@@ -62,6 +74,20 @@ public partial class RegisterWindow : Window
         loginWindow.Show();
         this.Close();
     }
+
+    private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
 
     private void CancelButton_Click(object sender, RoutedEventArgs e)
     {
