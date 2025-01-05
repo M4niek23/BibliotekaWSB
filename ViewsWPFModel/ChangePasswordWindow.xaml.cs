@@ -2,17 +2,21 @@
 using BibliotekaWSB.ViewsWPFModel;
 using BibliotekaWSB;
 using System.Windows;
+using BibliotekaWSB.Interfaces;
+using BibliotekaWSB.Data;
 
 namespace BibliotekaWSB.ViewsWPFModel;
 
 public partial class ChangePasswordWindow : Window
 {
     private readonly User _loggedUser;
+    private readonly IUserRepository _userRepository;
 
     public ChangePasswordWindow(User loggedUser)
     {
         InitializeComponent();
         _loggedUser = loggedUser;
+        _userRepository = new FileUserRepository();
     }
 
     private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -20,14 +24,16 @@ public partial class ChangePasswordWindow : Window
         string oldPassword = OldPasswordBox.Password;
         string newPassword = NewPasswordBox.Password;
 
-
         if (_loggedUser.VerifyPassword(oldPassword))
         {
-            _loggedUser.PasswordHash = newPassword; // Zamień na odpowiednie hashowanie
+            _loggedUser.PasswordHash = newPassword; 
+            _userRepository.Update(_loggedUser);    
+
             MessageBox.Show("Hasło zostało pomyślnie zmienione.");
-            this.Close();
-            LoginWindow loginWindow = new LoginWindow();
+            this.Hide();
+            var loginWindow = new LoginWindow();
             loginWindow.Show();
+            this.Close();
         }
         else
         {

@@ -1,0 +1,86 @@
+[
+  {
+    "Id": 1,
+    "Username": "jan.kowalski",
+    "PasswordHash": "pass123",
+    "FullName": "Jan Kowalski",
+    "Email": "jan.kowalski@example.com",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": "S12345",
+    "Position": null
+  },
+  {
+    "Id": 2,
+    "Username": "anna.nowak",
+    "PasswordHash": "admin123",
+    "FullName": "Anna Nowak",
+    "Email": "anna.nowak@example.com",
+    "Phone": "987654321",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Staff",
+    "StudentNumber": null,
+    "Position": "Bibliotekarz"
+  },
+  {
+    "Id": 3,
+    "Username": "nikolka ",
+    "PasswordHash": "kot123",
+    "FullName": "Mala nikolka ",
+    "Email": "m@o.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 4,
+    "Username": "maniek",
+    "PasswordHash": "pat123",
+    "FullName": "patryk maniek",
+    "Email": "p@o2.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 5,
+    "Username": "Nikolka",
+    "PasswordHash": "kot123",
+    "FullName": "Nikolka Mala",
+    "Email": "p@o.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 7,
+    "Username": "dsada",
+    "PasswordHash": "dsada",
+    "FullName": "sadsad",
+    "Email": "dsadsa",
+    "Phone": "sdsad",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  },
+  {
+    "Id": 6,
+    "Username": "PatMan",
+    "PasswordHash": "pa123",
+    "FullName": "patryk manka",
+    "Email": "pa@op.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
+  }
+]

@@ -4,6 +4,7 @@ using BibliotekaWSB.Services;
 using BibliotekaWSB;
 using System.Windows;
 using System.Windows.Controls;
+using System.ComponentModel;
 
 namespace BibliotekaWSB.ViewsWPFModel;
 
@@ -67,5 +68,34 @@ public partial class BookSearchView : Window
     {
         WindowState = WindowState.Minimized;
     }
+    private void DetailsButton_Click(object sender, RoutedEventArgs e)
+    {
+        if (sender is Button button && button.DataContext is Book selectedBook)
+        {
+           
+            var detailsWindow = new BookDetailsWindow(selectedBook);
 
+          
+            detailsWindow.ShowDialog();
+            
+        }
+    }
+
+    private void SortBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (SortBox.SelectedItem is ComboBoxItem selectedItem)
+        {
+            string sortOption = selectedItem.Content.ToString();
+            if (sortOption == "Sortuj rosnąco")
+            {
+                BookList.Items.SortDescriptions.Clear();
+                BookList.Items.SortDescriptions.Add(new SortDescription("Availability", ListSortDirection.Ascending));
+            }
+            else if (sortOption == "Sortuj malejąco")
+            {
+                BookList.Items.SortDescriptions.Clear();
+                BookList.Items.SortDescriptions.Add(new SortDescription("Availability", ListSortDirection.Descending));
+            }
+        }
+    }
 }

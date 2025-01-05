@@ -16,6 +16,9 @@ public class Book
 
     public string Category { get; set; }
 
+    public string Description { get; set; } 
+
+
 
 
     public Book(int id, string title, string author, string category)

@@ -1,0 +1,170 @@
+[
+  {
+    "Id": 3,
+    "Title": "Jane Eyre",
+    "Author": "Charlotte Bront\u00EB",
+    "Availability": 3,
+    "Category": "Klasyka",
+    "Description": "Autobiograficzna powie\u015B\u0107 o losach niezale\u017Cnej i silnej kobiety, kt\u00F3ra stawia czo\u0142a przeciwno\u015Bciom losu i poszukuje mi\u0142o\u015Bci oraz to\u017Csamo\u015Bci."
+  },
+  {
+    "Id": 4,
+    "Title": "Harry Potter (seria)",
+    "Author": "J.K. Rowling",
+    "Availability": 8,
+    "Category": "Fantastyka",
+    "Description": "Przygody m\u0142odego czarodzieja Harry\u0027ego Pottera, kt\u00F3ry ucz\u0119szcza do Szko\u0142y Magii i Czarodziejstwa w Hogwarcie, walcz\u0105c ze z\u0142ymi si\u0142ami."
+  },
+  {
+    "Id": 5,
+    "Title": "Zabi\u0107 drozda",
+    "Author": "Harper Lee",
+    "Availability": 6,
+    "Category": "Klasyka",
+    "Description": "Poruszaj\u0105ca opowie\u015B\u0107 o rasizmie i niesprawiedliwo\u015Bci w ma\u0142ym miasteczku na po\u0142udniu USA, opowiedziana oczami m\u0142odej dziewczyny Scout."
+  },
+  {
+    "Id": 6,
+    "Title": "Biblia",
+    "Author": "R\u00F3\u017Cni autorzy",
+    "Availability": 4,
+    "Category": "Religia",
+    "Description": "\u015Awi\u0119ta ksi\u0119ga chrze\u015Bcija\u0144stwa, zawieraj\u0105ca Stary i Nowy Testament, b\u0119d\u0105ca fundamentem wiary i moralno\u015Bci dla miliard\u00F3w ludzi na \u015Bwiecie."
+  },
+  {
+    "Id": 7,
+    "Title": "Wichrowe Wzg\u00F3rza",
+    "Author": "Emily Bront\u00EB",
+    "Availability": 2,
+    "Category": "Klasyka",
+    "Description": "Mroczna i pasjonuj\u0105ca historia mi\u0142osna mi\u0119dzy Catherine Earnshaw a Heathcliffem, pe\u0142na nami\u0119tno\u015Bci, zemsty i tragiczych los\u00F3w."
+  },
+  {
+    "Id": 9,
+    "Title": "Mroczne materie (seria)",
+    "Author": "Philip Pullman",
+    "Availability": 1,
+    "Category": "Fantastyka",
+    "Description": "Trilogia fantasy \u015Bledz\u0105ca losy Lyry Belacqua w jej podr\u00F3\u017Cach przez r\u00F3wnoleg\u0142e \u015Bwiaty, walcz\u0105cej przeciwko autorytarnym si\u0142om."
+  },
+  {
+    "Id": 10,
+    "Title": "Wielkie nadzieje",
+    "Author": "Charles Dickens",
+    "Availability": 10,
+    "Category": "Klasyka",
+    "Description": "Opowie\u015B\u0107 o m\u0142odym Pipie, jego marzeniach, mi\u0142o\u015Bci i moralnych wyborach w skomplikowanym \u015Bwiecie wiktoria\u0144skiej Anglii."
+  },
+  {
+    "Id": 11,
+    "Title": "Ma\u0142e kobietki",
+    "Author": "Louisa May Alcott",
+    "Availability": 7,
+    "Category": "Klasyka",
+    "Description": "Historia czterech si\u00F3str March, ich dorastania, marze\u0144 i wyzwa\u0144 w czasie wojny secesyjnej w Ameryce."
+  },
+  {
+    "Id": 12,
+    "Title": "Tessa D\u2019Urberville",
+    "Author": "Thomas Hardy",
+    "Availability": 5,
+    "Category": "Klasyka",
+    "Description": "Tragiczna historia mi\u0142osna Tess Durbeyfield, jej walki z przeznaczeniem i spo\u0142ecznymi normami w XIX-wiecznej Anglii."
+  },
+  {
+    "Id": 13,
+    "Title": "Paragraf 22",
+    "Author": "Joseph Heller",
+    "Availability": 3,
+    "Category": "Satyria",
+    "Description": "Ironiczna i absurdalna satyra na biurokracj\u0119 wojskow\u0105 oraz nonsensy wojny, opowiedziana z perspektywy ameryka\u0144skiego \u017Co\u0142nierza."
+  },
+  {
+    "Id": 15,
+    "Title": "Rebeka",
+    "Author": "Daphne Du Maurier",
+    "Availability": 6,
+    "Category": "Krymina\u0142",
+    "Description": "Psychologiczny thriller o m\u0142odej kobiecie, kt\u00F3ra po\u015Blubia bogatego wdowca, tylko po to, by zmierzy\u0107 si\u0119 z tajemnicami przesz\u0142o\u015Bci jego pierwszej \u017Cony."
+  },
+  {
+    "Id": 16,
+    "Title": "Hobbit",
+    "Author": "J.R.R. Tolkien",
+    "Availability": 4,
+    "Category": "Fantastyka",
+    "Description": "Przygoda Bilbo Bagginsa, hobbita, kt\u00F3ry wyrusza na niebezpieczn\u0105 wypraw\u0119 z grup\u0105 krasnolud\u00F3w, by odzyska\u0107 skarb strze\u017Cony przez smoka Smauga."
+  },
+  {
+    "Id": 17,
+    "Title": "Ptasi \u015Bpiew",
+    "Author": "Sebastian Faulks",
+    "Availability": 2,
+    "Category": "Historyczna",
+    "Description": "Wielow\u0105tkowa historia osadzona w czasie I wojny \u015Bwiatowej, ukazuj\u0105ca losy r\u00F3\u017Cnych postaci na tle historycznych wydarze\u0144."
+  },
+  {
+    "Id": 18,
+    "Title": "Buszuj\u0105cy w zbo\u017Cu",
+    "Author": "J.D. Salinger",
+    "Availability": 9,
+    "Category": "Klasyka",
+    "Description": "Opowie\u015B\u0107 o m\u0142odym Holdenzie Caulfieldzie, kt\u00F3ry po wyrzuceniu ze szko\u0142y wyrusza na samotn\u0105 w\u0119dr\u00F3wk\u0119 po Nowym Jorku, szukaj\u0105c sensu \u017Cycia."
+  },
+  {
+    "Id": 19,
+    "Title": "\u017Bona podr\u00F3\u017Cnika w czasie",
+    "Author": "Audrey Niffenegger",
+    "Availability": 1,
+    "Category": "Romans",
+    "Description": "Nieszablonowa historia mi\u0142osna o Clare i Henrym, kt\u00F3rzy musz\u0105 zmaga\u0107 si\u0119 z nieprzewidywalnymi podr\u00F3\u017Cami w czasie Henry\u0027ego."
+  },
+  {
+    "Id": 20,
+    "Title": "Miasteczko Middlemarch",
+    "Author": "George Eliot",
+    "Availability": 10,
+    "Category": "Klasyka",
+    "Description": "Rozbudowana powie\u015B\u0107 spo\u0142eczna przedstawiaj\u0105ca \u017Cycie mieszka\u0144c\u00F3w fikcyjnego miasteczka Middlemarch, ich ambicje i konflikty."
+  },
+  {
+    "Id": 21,
+    "Title": "Przemin\u0119\u0142o z wiatrem",
+    "Author": "Margaret Mitchell",
+    "Availability": 7,
+    "Category": "Romans",
+    "Description": "Epicka opowie\u015B\u0107 o Scarlett O\u0027Hara, jej \u017Cyciu podczas wojny secesyjnej i odbudowie Po\u0142udnia, pe\u0142na mi\u0142o\u015Bci, strat i determinacji."
+  },
+  {
+    "Id": 1,
+    "Title": "Duma i uprzedzenie",
+    "Author": "Jane Austen",
+    "Availability": 6,
+    "Category": "Klasyka",
+    "Description": "Historia mi\u0142o\u015Bci Elizabeth Bennet i pana Darcy\u0027ego, pe\u0142na humoru i spo\u0142ecznych komentarzy na temat angielskiej arystokracji ko\u0144ca XVIII wieku."
+  },
+  {
+    "Id": 8,
+    "Title": "Rok 1984",
+    "Author": "George Orwell",
+    "Availability": 9,
+    "Category": "Science Fiction",
+    "Description": "Dystopijna wizja przysz\u0142o\u015Bci, w kt\u00F3rej totalitarny rz\u0105d kontroluje ka\u017Cdy aspekt \u017Cycia obywateli, eliminuj\u0105c wolno\u015B\u0107 i prywatno\u015B\u0107."
+  },
+  {
+    "Id": 14,
+    "Title": "Dzie\u0142a zebrane Szekspira",
+    "Author": "William Shakespeare",
+    "Availability": 8,
+    "Category": "Dramat",
+    "Description": "Kompletna kolekcja dramat\u00F3w, sonet\u00F3w i poemat\u00F3w autorstwa jednego z najwi\u0119kszych dramaturg\u00F3w w historii literatury."
+  },
+  {
+    "Id": 2,
+    "Title": "W\u0142adca Pier\u015Bcieni",
+    "Author": "J.R.R. Tolkien",
+    "Availability": 4,
+    "Category": "Fantastyka",
+    "Description": "Epicka saga o przygodach Froda Bagginsa i Dru\u017Cyny Pier\u015Bcienia w walce z mrocznym lordem Sauronem, kt\u00F3ry pragnie odzyska\u0107 pot\u0119\u017Cny Pier\u015Bcie\u0144."
+  }
+]

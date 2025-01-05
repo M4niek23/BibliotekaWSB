@@ -105,7 +105,7 @@
                 </Grid>
 
                 <!-- Główna zawartość -->
-                <StackPanel Width="220" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,133,0,0">
+                <StackPanel Width="350" Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,133,0,0">
 
                     <!-- Powitanie użytkownika -->
                     <TextBlock Text="{Binding FullName, StringFormat=Witaj {0}, FallbackValue='Witaj, Gość'}"

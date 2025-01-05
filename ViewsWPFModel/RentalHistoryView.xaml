@@ -137,31 +137,63 @@
                                Margin="0,0,0,20"/>
                     <!-- Tabela historii wypożyczeń -->
                     <ListView x:Name="RentalList" Background="#1B1448" Foreground="White" Height="400" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView.Resources>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#462AD8"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.Resources>
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Tytuł" DisplayMemberBinding="{Binding BookTitle}" Width="250"/>
-                                <GridViewColumn Header="Data wypożyczenia" DisplayMemberBinding="{Binding RentalDate}" Width="200"/>
-                                <GridViewColumn Header="Data zwrotu" DisplayMemberBinding="{Binding ReturnDate}" Width="200"/>
+                                <GridViewColumn Header="Tytuł" Width="250">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding BookTitle}" HorizontalAlignment="Left"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Data wypożyczenia" Width="200">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding RentalDate}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Data zwrotu" Width="200">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding ReturnDate}" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
                                 <GridViewColumn Header="Akcja" Width="200">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <Button Content="Zwróć" Width="80"
-                                                    Background="#28AEED"
-                                                    Foreground="White"
-                                                    FontSize="12"
-                                                    Click="ReturnBook_Click"
-                                                    DataContext="{Binding}">
-                                                <Button.Style>
-                                                    <Style TargetType="Button">
-                                                        <Setter Property="IsEnabled" Value="False"/>
-                                                        <Style.Triggers>
-                                                            <DataTrigger Binding="{Binding ReturnDate}" Value="{x:Null}">
-                                                                <Setter Property="IsEnabled" Value="True"/>
-                                                            </DataTrigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </Button.Style>
-                                            </Button>
+                                            <Grid HorizontalAlignment="Center">
+                                                <Button Content="Zwróć" Width="80"
+                                                        Background="#28AEED"
+                                                        Foreground="White"
+                                                        FontSize="12"
+                                                        Click="ReturnBook_Click"
+                                                        DataContext="{Binding}">
+                                                    <Button.Style>
+                                                        <Style TargetType="Button">
+                                                            <Setter Property="IsEnabled" Value="False"/>
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding ReturnDate}" Value="{x:Null}">
+                                                                    <Setter Property="IsEnabled" Value="True"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+                                                </Button>
+                                            </Grid>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
@@ -173,3 +205,4 @@
         </Border>
     </Border>
 </Window>
+

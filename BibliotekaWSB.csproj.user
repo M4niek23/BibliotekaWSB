@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ViewsWPFModel\BookDetalisWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewsWPFModel\BookSearchView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +33,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ViewsWPFModel\BookDetalisWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ViewsWPFModel\BookSearchView.xaml">
       <SubType>Designer</SubType>
     </Page>

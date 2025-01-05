@@ -107,6 +107,23 @@ public class FileUserRepository : IUserRepository
         _users.Add(entity);
         Save();
     }
+    public void Update(User entity)
+    {
+        // Szukamy użytkownika w liście po Id (lub innym unikalnym polu)
+        var existingUserIndex = _users.FindIndex(u => u.Id == entity.Id);
+
+        if (existingUserIndex != -1)
+        {
+            // Nadpisujemy całą referencję (lub możesz zaktualizować poszczególne pola)
+            _users[existingUserIndex] = entity;
+            Save();
+        }
+        else
+        {
+            // Możesz np. rzucić wyjątek lub dodać go, jeśli wolisz
+            throw new InvalidOperationException("Nie znaleziono użytkownika do zaktualizowania.");
+        }
+    }
 
     public IEnumerable<User> GetAll() => _users;
 

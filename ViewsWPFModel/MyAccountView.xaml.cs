@@ -33,6 +33,7 @@ public partial class MyAccountView : Window
             LoggedUser = _loggedUser,
             ActiveLoans = activeLoansCount
         };
+      
     }
 
     private void Logout_Click(object sender, RoutedEventArgs e)
@@ -42,21 +43,7 @@ public partial class MyAccountView : Window
         this.Close();
     }
 
-    private void DeleteAccount_Click(object sender, RoutedEventArgs e)
-    {
-        var userRepository = new FileUserRepository();
-        var result = MessageBox.Show("Czy na pewno chcesz usunąć konto?", "Potwierdzenie", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
-        if (result == MessageBoxResult.Yes)
-        {
-            userRepository.Remove(_loggedUser);
-            MessageBox.Show("Twoje konto zostało usunięte.");
-            var loginWindow = new LoginWindow();
-            loginWindow.Show();
-            this.Close();
-        }
-    }
-
+    
     private void btnClose_Click(object sender, RoutedEventArgs e)
     {
         this.Close();

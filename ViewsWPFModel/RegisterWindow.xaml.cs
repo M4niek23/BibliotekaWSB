@@ -57,7 +57,10 @@ public partial class RegisterWindow : Window
         _userRepository.Add(newUser);
 
         MessageBox.Show("Rejestracja zakończona sukcesem.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
-        Close();
+        this.Hide();
+        var loginWindow = new LoginWindow();
+        loginWindow.Show();
+        this.Close();
     }
 
     private void CancelButton_Click(object sender, RoutedEventArgs e)

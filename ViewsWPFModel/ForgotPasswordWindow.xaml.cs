@@ -31,8 +31,11 @@ public partial class ForgotPasswordWindow : Window
         user.PasswordHash = "nowehaslo123";
         _userRepository.Remove(user);
         _userRepository.Add(user);
-
+        
         MessageBox.Show("Hasło zostało zresetowane do: nowehaslo123. Zaloguj się i zmień hasło.");
+        this.Hide();
+        var loginWindow = new LoginWindow();
+        loginWindow.Show();
         this.Close();
     }
     public void btnClose_Click(object sender, RoutedEventArgs e)

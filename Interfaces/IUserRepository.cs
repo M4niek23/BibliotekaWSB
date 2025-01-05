@@ -11,5 +11,5 @@ namespace BibliotekaWSB.Interfaces;
 public interface IUserRepository : IRepository<User>
 {
     User GetByUsername(string username);
-
+    void Update(User loggedUser);
 }
