@@ -1,6 +1,6 @@
 # Biblioteka WSB
 
-Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca podstawowe funkcje systemu bibliotecznego, tj. zarządzanie użytkownikami, książkami oraz wypożyczeniami.
+Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca podstawowe funkcje systemu bibliotecznego, tj. zarządzanie użytkownikami, książkami oraz wypożyczeniami.
 
 ---
 
@@ -12,14 +12,15 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 4. [Uruchomienie aplikacji](#uruchomienie-aplikacji)  
 5. [Główne funkcjonalności](#główne-funkcjonalności)  
 6. [Pliki konfiguracyjne i baza danych (pliki JSON)](#pliki-konfiguracyjne-i-baza-danych-pliki-json)  
-7. [Rozbudowa aplikacji](#rozbudowa-aplikacji)  
-8. [Autorzy](#autorzy)  
+7. [Nowości](#nowości)  
+8. [Rozbudowa aplikacji](#rozbudowa-aplikacji)  
+9. [Autorzy](#autorzy)  
 
 ---
 
 ## Wymagania
 
-- **.NET 6.0 lub nowszy** – projekt napisany w C# z wykorzystaniem WPF i serializacji JSON.
+- **.NET 8.0 lub nowszy** – projekt napisany w C# z wykorzystaniem WPF i serializacji JSON.
 - **Microsoft Visual Studio 2022** (lub inny kompatybilny IDE).
 - System **Windows** 
 - Opcjonalnie: znajomość mechanizmu serializacji wbudowanego w **System.Text.Json**.
@@ -31,8 +32,10 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 1. **Data** – Repozytoria zapisujące dane w plikach JSON.
 2. **Interfaces** – Definicje interfejsów (m.in. `IRepository<T>`).
 3. **Models** – Klasy reprezentujące encje (Książka, Użytkownik, Wypożyczenie itp.).
-4. **Services** – Logika biznesowa (m.in. `AuthenticationService`, `BookService`).
-5. **ViewsWPFModel** – Warstwa prezentacji WPF (okna `*.xaml` i obsługa zdarzeń w `.cs`).
+4. **Services** – Logika biznesowa (m.in. `AuthenticationService`, `BookService`, `RentalService`).
+5. **ViewsWPFModel** – Warstwa prezentacji WPF (okna `*.xaml` i obsługa zdarzeń w `.cs`), w tym:
+   - **AddBookWindow.xaml** – Okno dodawania nowej książki do biblioteki.
+   - **StaffPanelWindow.xaml** – Panel pracownika umożliwiający zarządzanie książkami i wypożyczeniami.
 
 ---
 
@@ -42,6 +45,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
    - Okno `LoginWindow` pobiera od użytkownika login i hasło.  
    - Klasa `AuthenticationService` sprawdza poprawność danych w pliku `users.json` (poprzez `FileUserRepository`).
    - Jeśli dane są prawidłowe, otwiera się główne okno (`MainWindow`).
+   - Użytkownicy z uprawnieniami pracownika mają dostęp do panelu pracownika (`StaffPanelWindow`).
 
 2. **Rejestracja**  
    - W `RegisterWindow` użytkownik podaje podstawowe dane.  
@@ -51,16 +55,24 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 3. **Zarządzanie książkami**  
    - Dane książek są w `books.json`.  
    - W `BookSearchView` można je przeszukiwać i wypożyczać.
+   - **Nowość**: Pracownicy mogą dodawać nowe książki przez `AddBookWindow`.
 
-4. **Wypożyczanie**  
+4. **Panel pracownika**  
+   - `StaffPanelWindow` umożliwia pracownikom zarządzanie książkami i wypożyczeniami.
+   - Funkcjonalności:
+     - **Dodawanie książek** (`AddBookWindow`).
+     - **Usuwanie książek**.
+     - **Przegląd wszystkich wypożyczeń**.
+
+5. **Wypożyczanie**  
    - Przy każdym wypożyczeniu aktualizowany jest stan dostępności w `Book`.  
    - Tworzony jest wpis w `rentals.json` (klasa `Rental`).
 
-5. **Zwrot**  
+6. **Zwrot**  
    - Widok `RentalHistoryView` pozwala oznaczyć książkę jako zwróconą (`ReturnDate != null`).  
    - Dostępność książki w repozytorium (`books.json`) zwiększa się o 1.
 
-6. **Moje konto**  
+7. **Moje konto**  
    - Okno `MyAccountView` pokazuje dane zalogowanego użytkownika, liczbę aktywnych wypożyczeń i opcje (zmiana hasła / usunięcie konta).
 
 ---
@@ -68,7 +80,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 ## Uruchomienie aplikacji
 
 1. Sklonuj lub pobierz projekt z repozytorium.
-2. Otwórz rozwiązanie w Visual Studio 2022 (lub innym IDE wspierającym .NET 6 i WPF).
+2. Otwórz rozwiązanie w Visual Studio 2022 (lub innym IDE wspierającym .NET 8 i WPF).
 3. Upewnij się, że masz włączony tryb **Debug** lub **Release**, a następnie zbuduj projekt (`Ctrl + Shift + B`).
 4. Uruchom aplikację (F5 lub przycisk _Start_).
 
@@ -87,6 +99,10 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 - **Wyszukiwarka** książek (`BookSearchView`).
 - **Wypożyczanie** i **zwrot** książek (`RentalService`).
 - **Historia** wypożyczeń (`RentalHistoryView`).
+- **Panel pracownika** (`StaffPanelWindow`):
+  - **Dodawanie książek** (`AddBookWindow`).
+  - **Usuwanie książek**.
+  - **Przegląd wszystkich wypożyczeń**.
 - **Zmiana hasła** (`ChangePasswordWindow`).
 - **Usuwanie konta** w widoku `MyAccountView`.
 
@@ -98,12 +114,34 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
   Przechowuje użytkowników z kluczami: `Id`, `Username`, `PasswordHash`, `Role`, `Email`, `Phone` itp.
 
 - **`books.json`**:  
-  Książki z polami `Id`, `Title`, `Author`, `Category`, `Availability`.
+  Książki z polami `Id`, `Title`, `Author`, `Category`, `Availability`, `Description`.
 
 - **`rentals.json`**:  
   Wypożyczenia z `Id`, `BookId`, `UserId`, `RentalDate`, `ReturnDate`.
 
 **Serializacja** opiera się na `System.Text.Json`.  
+
+---
+
+## Nowości
+
+### AddBookWindow i StaffPanelWindow
+
+Dodano nowe widoki:
+
+- **AddBookWindow**  
+  Umożliwia pracownikom dodawanie nowych książek do biblioteki. Formularz zawiera pola:
+  - **Tytuł**
+  - **Autor**
+  - **Kategoria**
+  - **Ilość** (dostępność)
+  - **Opis**
+
+- **StaffPanelWindow**  
+  Panel dla pracowników z dostępem do zaawansowanych funkcji:
+  - **Dodawanie książek** przez `AddBookWindow`.
+  - **Usuwanie książek** z listy dostępnych pozycji.
+  - **Przegląd wszystkich wypożyczeń** z możliwością filtrowania i zarządzania.
 
 ---
 
@@ -117,7 +155,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja typu desktop (WPF) realizująca p
 
 ## Autorzy
 
-- Kod powstał w ramach programowanie obiektowe ćwiczenia  
+- Kod powstał w ramach programowania obiektowego ćwiczenia  
 - Autor: **Patryk Mańka**
 
-Dziękujemy za skorzystanie z **Biblioteka WSB**!  
+Dziękujemy za skorzystanie z **Biblioteka WSB**!
