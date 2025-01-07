@@ -20,14 +20,12 @@ public partial class RegisterWindow : Window
 
     private void RegisterButton_Click(object sender, RoutedEventArgs e)
     {
-        // Pobierz dane z pól
         string username = UsernameBox.Text;
         string password = PasswordBox.Password;
         string fullName = FullNameBox.Text;
         string email = EmailBox.Text;
         string phone = PhoneBox.Text;
 
-        // Walidacja danych
         if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) ||
             string.IsNullOrWhiteSpace(fullName) || string.IsNullOrWhiteSpace(email))
         {
@@ -47,25 +45,23 @@ public partial class RegisterWindow : Window
             return;
         }
 
-        // Sprawdź, czy użytkownik już istnieje
         if (_userRepository.GetByUsername(username) != null)
         {
             MessageBox.Show("Użytkownik o takiej nazwie już istnieje.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
             return;
         }
 
-        // Utwórz nowego użytkownika
         var newUser = new Student(
             id: GenerateNewUserId(),
             username: username,
             passwordHash: password,
             fullName: fullName,
-            studentNumber: null, // Możesz dodać logiczne przypisanie dla numeru studenta
+            studentNumber: null, 
             email: email,
             phone: phone
         );
 
-        // Dodaj użytkownika do repozytorium
+        
         _userRepository.Add(newUser);
 
         MessageBox.Show("Rejestracja zakończona sukcesem.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);

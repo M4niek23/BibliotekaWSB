@@ -33,7 +33,6 @@ public partial class ForgotPasswordWindow : Window
             return;
         }
 
-        // Logika resetu hasła - np. ustawiamy nowe proste hasło
         user.PasswordHash = "nowehaslo123";
         _userRepository.Remove(user);
         _userRepository.Add(user);

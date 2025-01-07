@@ -18,16 +18,13 @@ public partial class MyAccountView : Window
         InitializeComponent();
         _loggedUser = user;
 
-        // Inicjalizacja RentalService
         var bookRepository = new FileBookRepository();
         var rentalRepository = new FileRentalRepository();
         _rentalService = new RentalService(bookRepository, rentalRepository);
 
-        // Pobranie liczby aktywnych wypożyczeń
         var activeLoansCount = _rentalService.GetUserRentals(_loggedUser)
             .Count(r => r.ReturnDate == null);
 
-        // Ustawienie kontekstu danych
         DataContext = new
         {
             LoggedUser = _loggedUser,

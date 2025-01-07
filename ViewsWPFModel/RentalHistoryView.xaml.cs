@@ -31,7 +31,7 @@ public partial class RentalHistoryView : Window
     private void LoadRentals()
     {
         var rentals = _rentalService.GetUserRentals(_loggedUser);
-        RentalList.ItemsSource = rentals; // Lista RentalViewModel
+        RentalList.ItemsSource = rentals; 
     }
 
     private void ReturnBook_Click(object sender, RoutedEventArgs e)
@@ -42,7 +42,7 @@ public partial class RentalHistoryView : Window
             if (rental != null)
             {
                 _rentalService.ReturnBook(rental);
-                LoadRentals(); // Odświeżenie listy po zwrocie
+                LoadRentals(); 
             }
         }
     }
