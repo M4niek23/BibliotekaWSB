@@ -13,8 +13,7 @@ namespace BibliotekaWSB.ViewsWPFModel
 
         public AddBookWindow()
         {
-            InitializeComponent(); // musi być wywołane
-            _bookRepository = new FileBookRepository();
+            InitializeComponent();             _bookRepository = new FileBookRepository();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -33,7 +32,6 @@ namespace BibliotekaWSB.ViewsWPFModel
                 return;
             }
 
-            // Wygeneruj ID: 
             var allBooks = _bookRepository.GetAll();
             int newId = allBooks.Any() ? allBooks.Max(b => b.Id) + 1 : 1;
 
@@ -46,7 +44,6 @@ namespace BibliotekaWSB.ViewsWPFModel
             _bookRepository.Add(newBook);
             MessageBox.Show("Książka została dodana pomyślnie!", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            // Ustawiamy DialogResult na true => StaffPanelWindow zobaczy, że się udało
             this.DialogResult = true;
             this.Close();
         }

@@ -25,7 +25,6 @@ public partial class MainWindow : Window
         _loggedUser = user;
         this.DataContext = _loggedUser;
 
-        // Jeżeli użytkownik jest Staff, pokaż przycisk
         if (_loggedUser.Role == "Staff")
         {
             StaffPanel.Visibility = Visibility.Visible;
@@ -48,13 +47,11 @@ public partial class MainWindow : Window
 
     private void SearchBooks_Click(object sender, RoutedEventArgs e)
     {
-        // Tworzenie instancji BookSearchView
         BookSearchView bookSearchView = new BookSearchView(_loggedUser);
 
-        // Ustawienie MainWindow jako zamknięte
         this.Close();
 
-        // Wyświetlenie BookSearchView jako nowego okna
+        
         bookSearchView.Show();
     }
 

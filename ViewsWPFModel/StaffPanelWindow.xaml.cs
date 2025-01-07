@@ -15,7 +15,6 @@ namespace BibliotekaWSB.ViewsWPFModel
         private IRentalRepository _rentalRepository;
         private IUserRepository _userRepository;
 
-        // Konstruktor przyjmujący obiekt User
         public StaffPanelWindow(User user)
         {
             InitializeComponent(); // MUSI być wywołane
@@ -29,13 +28,10 @@ namespace BibliotekaWSB.ViewsWPFModel
             LoadAllBooks();
         }
 
-        // Konstruktor bezparametrowy (potrzebny np. do designera). 
-        // Możesz go usunąć, jeśli nigdzie w XAML nie tworzysz StaffPanelWindow bezpośrednio.
         public StaffPanelWindow() : this(null)
         {
         }
 
-        // Model do wyświetlania listy wypożyczeń
         private class StaffRentalViewModel
         {
             public int Id { get; set; }
@@ -71,7 +67,6 @@ namespace BibliotekaWSB.ViewsWPFModel
             BooksList.ItemsSource = _bookRepository.GetAll();
         }
 
-        // Obsługa przycisku USUŃ książkę
         private void btnRemoveBook_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button btn && btn.DataContext is Book book)
@@ -83,13 +78,11 @@ namespace BibliotekaWSB.ViewsWPFModel
             }
         }
 
-        // Obsługa przycisku DODAJ książkę (otwieramy AddBookWindow)
         private void btnAddBook_Click(object sender, RoutedEventArgs e)
         {
             var addBookWindow = new AddBookWindow();
             bool? result = addBookWindow.ShowDialog();
 
-            // Jeżeli okno AddBookWindow zwróci true (zapisano)
             if (result == true)
             {
                 LoadAllBooks();

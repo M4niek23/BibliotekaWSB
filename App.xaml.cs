@@ -28,7 +28,6 @@ public partial class App : Application
     {
         var fileRepo = new FileBookRepository();
 
-        // Jeśli plik books.json zawiera dane, pomiń inicjalizację
         if (fileRepo.GetAll().Any())
         {
             Console.WriteLine("Plik books.json już zawiera dane.");
@@ -158,7 +157,6 @@ public partial class App : Application
     {
         var fileRepo = new FileRentalRepository();
 
-        // Jeśli plik rentals.json zawiera dane, pomiń inicjalizację
         if (fileRepo.GetAll().Any())
         {
             Console.WriteLine("Plik rentals.json już zawiera dane.");
@@ -184,7 +182,6 @@ public partial class App : Application
     {
         var fileRepo = new FileUserRepository();
 
-        // Jeśli plik users.json zawiera dane, pomiń inicjalizację
         if (fileRepo.GetAll().Any())
         {
             Console.WriteLine("Plik users.json już zawiera dane.");

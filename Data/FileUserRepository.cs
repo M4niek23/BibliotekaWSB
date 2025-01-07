@@ -12,7 +12,7 @@ public class FileUserRepository : IUserRepository
 {
     private string _filePath = "users.json";
 
-    // DTO do serializacji i deserializacji
+    
     private class UserDto
     {
         public int Id { get; set; }
@@ -22,9 +22,9 @@ public class FileUserRepository : IUserRepository
         public string Email { get; set; }
         public string Phone { get; set; }
         public DateTime LastLogin { get; set; }
-        public string Role { get; set; } // "Student" lub "Staff"
-        public string StudentNumber { get; set; } // jeśli Student
-        public string Position { get; set; } // jeśli Staff
+        public string Role { get; set; } 
+        public string StudentNumber { get; set; } 
+        public string Position { get; set; } 
     }
 
     private List<User> _users;
@@ -109,18 +109,18 @@ public class FileUserRepository : IUserRepository
     }
     public void Update(User entity)
     {
-        // Szukamy użytkownika w liście po Id (lub innym unikalnym polu)
+        
         var existingUserIndex = _users.FindIndex(u => u.Id == entity.Id);
 
         if (existingUserIndex != -1)
         {
-            // Nadpisujemy całą referencję (lub możesz zaktualizować poszczególne pola)
+        
             _users[existingUserIndex] = entity;
             Save();
         }
         else
         {
-            // Możesz np. rzucić wyjątek lub dodać go, jeśli wolisz
+        
             throw new InvalidOperationException("Nie znaleziono użytkownika do zaktualizowania.");
         }
     }
