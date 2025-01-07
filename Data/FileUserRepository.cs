@@ -53,7 +53,7 @@ public class FileUserRepository : IUserRepository
 
     private UserDto ToDto(User user)
     {
-        
+
         var dto = new UserDto
         {
             Id = user.Id,

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\
+C:\Users\pat71\source\repos\BibliotekaWSB\obj\Debug\net8.0-windows\
 BibliotekaWSB
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\pat71\Source\Repos\BibliotekaWSB\App.xaml
-91091248350
+C:\Users\pat71\source\repos\BibliotekaWSB\App.xaml
+111277279406
 
-311958848339
+33-507512784
 198-1431420039
-ViewsWPFModel\BookDetalisWindow.xaml;ViewsWPFModel\BookSearchView.xaml;ViewsWPFModel\ChangePasswordWindow.xaml;ViewsWPFModel\ForgotPasswordWindow.xaml;ViewsWPFModel\LoginWindow.xaml;ViewsWPFModel\MainWindow.xaml;ViewsWPFModel\MyAccountView.xaml;ViewsWPFModel\RegisterWindow.xaml;ViewsWPFModel\RentalHistoryView.xaml;
+ViewsWPFModel\AddBookWindow.xaml;ViewsWPFModel\BookDetalisWindow.xaml;ViewsWPFModel\BookSearchView.xaml;ViewsWPFModel\ChangePasswordWindow.xaml;ViewsWPFModel\ForgotPasswordWindow.xaml;ViewsWPFModel\LoginWindow.xaml;ViewsWPFModel\MainWindow.xaml;ViewsWPFModel\MyAccountView.xaml;ViewsWPFModel\RegisterWindow.xaml;ViewsWPFModel\RentalHistoryView.xaml;ViewsWPFModel\StaffPanelWindow.xaml;
 
 False
 

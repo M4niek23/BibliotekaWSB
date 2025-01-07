@@ -1,6 +1,4 @@
-﻿
-
-using System.Text;
+﻿using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -27,16 +25,26 @@ public partial class MainWindow : Window
         _loggedUser = user;
         this.DataContext = _loggedUser;
 
+        // Jeżeli użytkownik jest Staff, pokaż przycisk
+        if (_loggedUser.Role == "Staff")
+        {
+            StaffPanel.Visibility = Visibility.Visible;
+        }
+        else
+        {
+            StaffPanel.Visibility = Visibility.Collapsed;
+        }
     }
+
     private void btnMinimize_Click(object sender, RoutedEventArgs e)
     {
         this.WindowState = WindowState.Minimized;
     }
+
     private void btnClose_Click(object sender, RoutedEventArgs e)
     {
         this.Close();
     }
-
 
     private void SearchBooks_Click(object sender, RoutedEventArgs e)
     {
@@ -48,8 +56,8 @@ public partial class MainWindow : Window
 
         // Wyświetlenie BookSearchView jako nowego okna
         bookSearchView.Show();
-
     }
+
     private void Window_MouseDown(object sender, MouseButtonEventArgs e)
     {
         if (e.LeftButton == MouseButtonState.Pressed)
@@ -57,6 +65,7 @@ public partial class MainWindow : Window
             DragMove();
         }
     }
+
     private void Logout_Click(object sender, RoutedEventArgs e)
     {
         var loginWindow = new LoginWindow();
@@ -70,10 +79,18 @@ public partial class MainWindow : Window
         rentalHistoryView.Show();
         this.Close();
     }
+
     public void MyAccountView_Click(object sender, RoutedEventArgs e)
     {
         var myAccountView = new MyAccountView(_loggedUser);
         myAccountView.Show();
+        this.Close();
+    }
+
+    private void StaffPanel_Click(object sender, RoutedEventArgs e)
+    {
+        var staffPanelWindow = new StaffPanelWindow(_loggedUser);
+        staffPanelWindow.Show();
         this.Close();
     }
 }

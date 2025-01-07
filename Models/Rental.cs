@@ -13,7 +13,7 @@ public class Rental
     public int UserId { get; set; }
     public DateTime RentalDate { get; set; }
     public DateTime? ReturnDate { get; set; }
-    public Rental(int id, int bookId, int userId,DateTime rentalDate,DateTime? returnDate)
+    public Rental(int id, int bookId, int userId, DateTime rentalDate, DateTime? returnDate)
     {
         Id = id;
         BookId = bookId;

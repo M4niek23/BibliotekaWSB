@@ -118,5 +118,17 @@
     "Role": "Student",
     "StudentNumber": null,
     "Position": null
+  },
+  {
+    "Id": 11,
+    "Username": "Jan",
+    "PasswordHash": "nowe123",
+    "FullName": "Jan kowalski",
+    "Email": "jan@1.pl",
+    "Phone": "123456789",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Role": "Student",
+    "StudentNumber": null,
+    "Position": null
   }
 ]

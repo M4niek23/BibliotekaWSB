@@ -1,29 +1,5 @@
 [
   {
-    "Id": 4,
-    "Title": "Harry Potter (seria)",
-    "Author": "J.K. Rowling",
-    "Availability": 8,
-    "Category": "Fantastyka",
-    "Description": "Przygody m\u0142odego czarodzieja Harry\u0027ego Pottera, kt\u00F3ry ucz\u0119szcza do Szko\u0142y Magii i Czarodziejstwa w Hogwarcie, walcz\u0105c ze z\u0142ymi si\u0142ami."
-  },
-  {
-    "Id": 5,
-    "Title": "Zabi\u0107 drozda",
-    "Author": "Harper Lee",
-    "Availability": 6,
-    "Category": "Klasyka",
-    "Description": "Poruszaj\u0105ca opowie\u015B\u0107 o rasizmie i niesprawiedliwo\u015Bci w ma\u0142ym miasteczku na po\u0142udniu USA, opowiedziana oczami m\u0142odej dziewczyny Scout."
-  },
-  {
-    "Id": 7,
-    "Title": "Wichrowe Wzg\u00F3rza",
-    "Author": "Emily Bront\u00EB",
-    "Availability": 2,
-    "Category": "Klasyka",
-    "Description": "Mroczna i pasjonuj\u0105ca historia mi\u0142osna mi\u0119dzy Catherine Earnshaw a Heathcliffem, pe\u0142na nami\u0119tno\u015Bci, zemsty i tragiczych los\u00F3w."
-  },
-  {
     "Id": 9,
     "Title": "Mroczne materie (seria)",
     "Author": "Philip Pullman",
@@ -54,14 +30,6 @@
     "Availability": 5,
     "Category": "Klasyka",
     "Description": "Tragiczna historia mi\u0142osna Tess Durbeyfield, jej walki z przeznaczeniem i spo\u0142ecznymi normami w XIX-wiecznej Anglii."
-  },
-  {
-    "Id": 13,
-    "Title": "Paragraf 22",
-    "Author": "Joseph Heller",
-    "Availability": 3,
-    "Category": "Satyria",
-    "Description": "Ironiczna i absurdalna satyra na biurokracj\u0119 wojskow\u0105 oraz nonsensy wojny, opowiedziana z perspektywy ameryka\u0144skiego \u017Co\u0142nierza."
   },
   {
     "Id": 15,
@@ -128,14 +96,6 @@
     "Description": "Kompletna kolekcja dramat\u00F3w, sonet\u00F3w i poemat\u00F3w autorstwa jednego z najwi\u0119kszych dramaturg\u00F3w w historii literatury."
   },
   {
-    "Id": 2,
-    "Title": "W\u0142adca Pier\u015Bcieni",
-    "Author": "J.R.R. Tolkien",
-    "Availability": 4,
-    "Category": "Fantastyka",
-    "Description": "Epicka saga o przygodach Froda Bagginsa i Dru\u017Cyny Pier\u015Bcienia w walce z mrocznym lordem Sauronem, kt\u00F3ry pragnie odzyska\u0107 pot\u0119\u017Cny Pier\u015Bcie\u0144."
-  },
-  {
     "Id": 1,
     "Title": "Duma i uprzedzenie",
     "Author": "Jane Austen",
@@ -163,8 +123,48 @@
     "Id": 3,
     "Title": "Jane Eyre",
     "Author": "Charlotte Bront\u00EB",
-    "Availability": 3,
+    "Availability": 4,
     "Category": "Klasyka",
     "Description": "Autobiograficzna powie\u015B\u0107 o losach niezale\u017Cnej i silnej kobiety, kt\u00F3ra stawia czo\u0142a przeciwno\u015Bciom losu i poszukuje mi\u0142o\u015Bci oraz to\u017Csamo\u015Bci."
+  },
+  {
+    "Id": 7,
+    "Title": "Wichrowe Wzg\u00F3rza",
+    "Author": "Emily Bront\u00EB",
+    "Availability": 3,
+    "Category": "Klasyka",
+    "Description": "Mroczna i pasjonuj\u0105ca historia mi\u0142osna mi\u0119dzy Catherine Earnshaw a Heathcliffem, pe\u0142na nami\u0119tno\u015Bci, zemsty i tragiczych los\u00F3w."
+  },
+  {
+    "Id": 2,
+    "Title": "W\u0142adca Pier\u015Bcieni",
+    "Author": "J.R.R. Tolkien",
+    "Availability": 9,
+    "Category": "Fantastyka",
+    "Description": "Epicka saga o przygodach Froda Bagginsa i Dru\u017Cyny Pier\u015Bcienia w walce z mrocznym lordem Sauronem, kt\u00F3ry pragnie odzyska\u0107 pot\u0119\u017Cny Pier\u015Bcie\u0144."
+  },
+  {
+    "Id": 4,
+    "Title": "Harry Potter (seria)",
+    "Author": "J.K. Rowling",
+    "Availability": 19,
+    "Category": "Fantastyka",
+    "Description": "Przygody m\u0142odego czarodzieja Harry\u0027ego Pottera, kt\u00F3ry ucz\u0119szcza do Szko\u0142y Magii i Czarodziejstwa w Hogwarcie, walcz\u0105c ze z\u0142ymi si\u0142ami."
+  },
+  {
+    "Id": 5,
+    "Title": "Zabi\u0107 drozda",
+    "Author": "Harper Lee",
+    "Availability": 16,
+    "Category": "Klasyka",
+    "Description": "Poruszaj\u0105ca opowie\u015B\u0107 o rasizmie i niesprawiedliwo\u015Bci w ma\u0142ym miasteczku na po\u0142udniu USA, opowiedziana oczami m\u0142odej dziewczyny Scout."
+  },
+  {
+    "Id": 13,
+    "Title": "Paragraf 22",
+    "Author": "Joseph Heller",
+    "Availability": 3,
+    "Category": "Satyria",
+    "Description": "Ironiczna i absurdalna satyra na biurokracj\u0119 wojskow\u0105 oraz nonsensy wojny, opowiedziana z perspektywy ameryka\u0144skiego \u017Co\u0142nierza."
   }
 ]

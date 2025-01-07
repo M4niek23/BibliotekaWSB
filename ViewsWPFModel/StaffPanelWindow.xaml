@@ -1,0 +1,242 @@
+﻿<Window x:Class="BibliotekaWSB.ViewsWPFModel.StaffPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Panel Pracownika"
+        Height="1000" Width="1500"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize">
+
+    <Border CornerRadius="12">
+        <Border CornerRadius="10"
+                BorderThickness="2" Opacity="0.95">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.75"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B1448" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid Margin="10,8,10,12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <!-- Pasek górny (minimalizacja / zamknięcie) -->
+
+                <!-- Tytuł i przyciski akcji Staff -->
+                <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBlock Text="Panel Pracownika" 
+                               Foreground="White" 
+                               FontWeight="Bold" 
+                               FontSize="22"/>
+                    <Button x:Name="btnAddBook" 
+                            Content="Dodaj Książkę"
+                            Click="btnAddBook_Click"
+                            Foreground="White"
+                            FontSize="14"
+                            Width="150"
+                            Height="40"
+                            Margin="0,20,0,0"
+                            HorizontalAlignment="Center">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#462AD8"/>
+                                <Setter Property="BorderBrush" Value="Transparent"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="FontFamily" Value="Montserrat"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28AEED"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+
+                <!-- Dół: dwie sekcje obok siebie (Wypożyczenia / Książki) -->
+                <Grid Grid.Row="2" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Sekcja: Wszystkie wypożyczenia -->
+                    <GroupBox Header="Wszystkie wypożyczenia"
+                              Foreground="White"
+                              FontWeight="Bold"
+                              Margin="10"
+                              FontSize="14"
+                              BorderBrush="White">
+                        <ListView x:Name="AllRentalsList">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                                    <GridViewColumn Header="Tytuł" Width="200" DisplayMemberBinding="{Binding BookTitle}"/>
+                                    <GridViewColumn Header="Użytkownik" Width="150" DisplayMemberBinding="{Binding Username}"/>
+                                    <GridViewColumn Header="Data wypożyczenia" Width="150" DisplayMemberBinding="{Binding RentalDate}"/>
+                                    <GridViewColumn Header="Data zwrotu" Width="150" DisplayMemberBinding="{Binding ReturnDate}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+
+                    <!-- Sekcja: Lista książek (z możliwością usuwania) -->
+                    <GroupBox Header="Lista książek"
+                              Foreground="White"
+                              FontWeight="Bold"
+                              Margin="10"
+                              FontSize="14"
+                              Grid.Column="1"
+                              BorderBrush="White">
+                        <ListView x:Name="BooksList">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                                    <GridViewColumn Header="Tytuł" Width="200" DisplayMemberBinding="{Binding Title}"/>
+                                    <GridViewColumn Header="Autor" Width="150" DisplayMemberBinding="{Binding Author}"/>
+                                    <GridViewColumn Header="Kategoria" Width="100" DisplayMemberBinding="{Binding Category}"/>
+                                    <GridViewColumn Header="Ilość" Width="60" DisplayMemberBinding="{Binding Availability}"/>
+
+                                    <GridViewColumn Header="Usuń" Width="80">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Content="Usuń"
+                                                        Width="60"
+                                                        Click="btnRemoveBook_Click"
+                                                        DataContext="{Binding}"
+                                                        Background="#DA34AE"
+                                                        Foreground="White"/>
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+                </Grid>
+                <Button x:Name="btnClose"
+                    BorderThickness="0"
+                    Content="X"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    HorizontalAlignment="Left" Width="25"
+                    Click="btnClose_Click" Margin="1451,5,0,5">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#DA34AE"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#C62DAE"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="18" Height="18"
+                                CornerRadius="9"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnMinimize"
+                    BorderThickness="0"
+                    Content="-"
+                    Foreground="White"
+                    FontSize="16"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Click="btnMinimize_Click" Margin="1414,3,22,2" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="-0.338" AngleX="0.006"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-0.369" X="0.002"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#28AEED"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#278BEF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="18" Height="18"
+                                CornerRadius="9"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btnBack"
+                    BorderThickness="0"
+                    Content="Cofnij"
+                    Foreground="White"
+                    FontSize="16"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Click="btnBack_Click" Margin="10,-14,1316,78" Grid.RowSpan="2">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#DA34AE"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#28AEED"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="120" Height="40"
+                                CornerRadius="9"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </Border>
+    </Border>
+</Window>
+

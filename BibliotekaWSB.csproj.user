@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ViewsWPFModel\AddBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewsWPFModel\BookDetalisWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,8 +34,14 @@
     <Compile Update="ViewsWPFModel\RentalHistoryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewsWPFModel\StaffPanelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ViewsWPFModel\AddBookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ViewsWPFModel\BookDetalisWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -58,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewsWPFModel\RentalHistoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewsWPFModel\StaffPanelWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -34,3 +34,7 @@ C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\refint\Biblio
 C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\BibliotekaWSB.pdb
 C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\BibliotekaWSB.genruntimeconfig.cache
 C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\ref\BibliotekaWSB.dll
+C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\ViewsWPFModel\AddBookWindow.baml
+C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\ViewsWPFModel\StaffPanelWindow.baml
+C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\ViewsWPFModel\AddBookWindow.g.cs
+C:\Users\pat71\Source\Repos\BibliotekaWSB\obj\Debug\net8.0-windows\ViewsWPFModel\StaffPanelWindow.g.cs
