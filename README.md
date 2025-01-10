@@ -31,8 +31,8 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 **Dane logowania administratora**
 **Domyślne dane logowania do konta administratora:**
 
-**Login: anna.nowak**
-**Hasło: admin123**
+- **Login: anna.nowak**
+- **Hasło: admin123**
 
 --
 ## Struktura projektu
