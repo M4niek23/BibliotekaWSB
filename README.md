@@ -7,7 +7,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 ## Spis treści
 
 1. [Wymagania](#wymagania)
-2. [Dane do logowania - Administrator](#Dane_do_logowania_Administrator)  
+2. [Dane do logowania - Administrator](#Dane-do-logowania-Administrator)  
 3. [Struktura projektu](#struktura-projektu)  
 4. [Opis działania](#opis-działania)  
 5. [Uruchomienie aplikacji](#uruchomienie-aplikacji)  
@@ -34,7 +34,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 - **Login: anna.nowak**
 - **Hasło: admin123**
 
---
+---
 ## Struktura projektu
 
 1. **Data** – Repozytoria zapisujące dane w plikach JSON.
