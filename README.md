@@ -6,15 +6,16 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 
 ## Spis treści
 
-1. [Wymagania](#wymagania)  
-2. [Struktura projektu](#struktura-projektu)  
-3. [Opis działania](#opis-działania)  
-4. [Uruchomienie aplikacji](#uruchomienie-aplikacji)  
-5. [Główne funkcjonalności](#główne-funkcjonalności)  
-6. [Pliki konfiguracyjne i baza danych (pliki JSON)](#pliki-konfiguracyjne-i-baza-danych-pliki-json)  
-7. [Nowości](#nowości)  
-8. [Rozbudowa aplikacji](#rozbudowa-aplikacji)  
-9. [Autorzy](#autorzy)  
+1. [Wymagania](#wymagania)
+2. [Dane do logowania - Administrator](#Dane_do_logowania_Administrator)  
+3. [Struktura projektu](#struktura-projektu)  
+4. [Opis działania](#opis-działania)  
+5. [Uruchomienie aplikacji](#uruchomienie-aplikacji)  
+6. [Główne funkcjonalności](#główne-funkcjonalności)  
+7. [Pliki konfiguracyjne i baza danych (pliki JSON)](#pliki-konfiguracyjne-i-baza-danych-pliki-json)  
+8. [Nowości](#nowości)  
+9. [Rozbudowa aplikacji](#rozbudowa-aplikacji)  
+10. [Autorzy](#autorzy)  
 
 ---
 
@@ -26,7 +27,14 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 - Opcjonalnie: znajomość mechanizmu serializacji wbudowanego w **System.Text.Json**.
 
 ---
+## Dane do logowania - Administrator
+**Dane logowania administratora**
+**Domyślne dane logowania do konta administratora:**
 
+**Login: anna.nowak**
+**Hasło: admin123**
+
+--
 ## Struktura projektu
 
 1. **Data** – Repozytoria zapisujące dane w plikach JSON.
