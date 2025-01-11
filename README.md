@@ -224,11 +224,11 @@ Dodano nowe widoki:
 
 ## Braki w aplikacji
 **To czego nie udało mi się wprowadzić i chciałbym w przyszłości rozbudować to min.:**
-- **1. Używanie bazy danych SQL**
-- **2. Wprowadzenie pełnoprawnego panelu administratora z możliwością nadwania ról nowym pracownikom chodzi mi o `Staff`**
-- **3. Wprowadzenie Unity Testów z Mockowaniem, każda aplikacja musi mieć testy, aby wejść na rynek, wiec testy są obowiązkowe**
-- **4. Wprowadzenie lepszych zabezpieczeń kodu i optymalizacja na większą ilość platform niżeli tylko na Windows**
-- **5. Większa optymalizacja kodu**
+- **Używanie bazy danych SQL**
+- **Wprowadzenie pełnoprawnego panelu administratora z możliwością nadwania ról nowym pracownikom chodzi mi o `Staff`**
+- **Wprowadzenie Unity Testów z Mockowaniem, każda aplikacja musi mieć testy, aby wejść na rynek, wiec testy są obowiązkowe**
+- **Wprowadzenie lepszych zabezpieczeń kodu i optymalizacja na większą ilość platform niżeli tylko na Windows**
+- **Większa optymalizacja kodu**
    
 ## Diagram klas UML
 
