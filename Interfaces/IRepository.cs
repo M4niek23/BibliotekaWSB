@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BibliotekaWSB.Interfaces;
 
+// Przykład generycznego interfejsu repozytorium (CRUD)
 public interface IRepository<T>
 {
     T GetById(int id);

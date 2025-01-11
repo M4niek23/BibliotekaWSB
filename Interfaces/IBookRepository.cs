@@ -10,5 +10,5 @@ namespace BibliotekaWSB.Interfaces;
 
 public interface IBookRepository : IRepository<Book>
 {
-    IEnumerable<Book> Search(string query);
+    IEnumerable<Book> Search(string query); // Pomocniczna metoda wyszukiwania
 }

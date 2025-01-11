@@ -8,17 +8,18 @@ namespace BibliotekaWSB.Models;
 
 public abstract class User
 {
-    private string password;
+    private string password; // Nie używane bezpośrednio ( jest PasswordHash )
 
     public int Id { get; set; }
     public string Username { get; set; }
-    public string PasswordHash { get; set; }
+    public string PasswordHash { get; set; } // Przechowuje hasło lub jego skrót jako zaszyforwane
     public string FullName { get; set; }
     public string Email { get; set; }
     public string Phone { get; set; }
     public DateTime LastLogin { get; set; }
 
-    public abstract string Role { get; } // Dodane!
+    // Właściwość abstrakcyjna – wymusza zdefiniowanie 'Role' w klasach pochodnych
+    public abstract string Role { get; } 
 
     public User(int id, string username, string passwordHash, string fullName, string email = "", string phone = "")
     {
@@ -30,6 +31,7 @@ public abstract class User
         Phone = phone;
 
     }
+
     public string UserRole => GetUserRole();
     protected User(int id, string username, string password)
     {
@@ -40,9 +42,12 @@ public abstract class User
 
     }
 
+    // Przykład enkapsulacji – prosta weryfikacja hasła
     public bool VerifyPassword(string password)
     {
+
         return PasswordHash == password;
     }
+    // Przykład metody abstrakcyjnej (musi być zaimplementowana w klasach dziedziczących)
     public abstract string GetUserRole();
 }

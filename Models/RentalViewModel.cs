@@ -9,8 +9,8 @@ namespace BibliotekaWSB.Models;
 
 public class RentalViewModel
 {
-    public int RentalId { get; set; }
-    public string BookTitle { get; set; }
-    public DateTime? RentalDate { get; set; }
-    public DateTime? ReturnDate { get; set; }
+    public int RentalId { get; set; } // Id wypożyczenia
+    public string BookTitle { get; set; } // Nazwa książki
+    public DateTime? RentalDate { get; set; } // Data wypożyczenia
+    public DateTime? ReturnDate { get; set; } // Data zwrotu
 }

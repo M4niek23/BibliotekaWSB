@@ -1,15 +1,14 @@
 ﻿
 using BibliotekaWSB.Interfaces;
 using BibliotekaWSB.Models;
-using System;
-using System.Linq;
+
 
 namespace BibliotekaWSB.Services;
 
 public class RentalService
 {
-    private IBookRepository _bookRepository;
-    private IRentalRepository _rentalRepository;
+    private IBookRepository _bookRepository; // Repozytorium książek
+    private IRentalRepository _rentalRepository; // Repozytorium wypożyczeń
 
     public RentalService(IBookRepository bookRepository, IRentalRepository rentalRepository)
     {
@@ -40,6 +39,7 @@ public class RentalService
 
     public IEnumerable<RentalViewModel> GetUserRentals(User user)
     {
+        // / Pobiera wypożyczenia użytkownika i mapuje do RentalViewModel
         var rentals = _rentalRepository.GetRentalsByUserId(user.Id);
 
         return rentals.Select(r =>
@@ -62,12 +62,14 @@ public class RentalService
 
     public bool RentBook(User user, Book book)
     {
+        // Właściwa logika wypożyczenia
         if (CanRentBook(user, book))
         {
-            book.Availability--;
+            book.Availability--; // Odświeżamy książkę w repozytorium
             _bookRepository.Remove(book);
             _bookRepository.Add(book);
 
+            // Tworzymy nowe wypożyczenie
             var rental = new Rental(
                 id: NewRentalId(),
                 bookId: book.Id,
@@ -83,7 +85,7 @@ public class RentalService
 
     public void ReturnBook(Rental rental)
     {
-
+        // Ustawienie daty zwrotu i zwiększenie dostępności książki
         rental.ReturnDate = DateTime.Now;
         _rentalRepository.Update(rental);
         var book = _bookRepository.GetById(rental.BookId);
@@ -97,6 +99,7 @@ public class RentalService
 
     private int NewRentalId()
     {
+        // Generowanie nowego Id na podstawie max Id w repozytorium
         var all = _rentalRepository.GetAll();
         if (!all.Any()) return 1;
         return all.Max(r => r.Id) + 1;

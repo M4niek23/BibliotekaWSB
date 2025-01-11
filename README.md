@@ -15,6 +15,7 @@ Projekt **Biblioteka WSB** to prosta aplikacja desktopowa (WPF) realizująca pod
 7. [Pliki konfiguracyjne i baza danych (pliki JSON)](#pliki-konfiguracyjne-i-baza-danych-pliki-json)  
 8. [Nowości](#nowości)  
 9. [Rozbudowa aplikacji](#rozbudowa-aplikacji)  
+10. [Diagram klas UML](#diagram-klas-uml)
 10. [Autorzy](#autorzy)  
 
 ---
@@ -161,6 +162,12 @@ Dodano nowe widoki:
 - **Nowe widoki**: wystarczy dodać pliki `.xaml` i obsługę w `.cs`.
 - **Nowe pola** w modelach: można zaktualizować struktury `Book`, `Rental`, `Student`.
 - **Baza SQL**: wystarczy zaimplementować własne repozytoria i zastąpić obecne `FileXRepository`.
+
+---
+
+## Diagram klas UML
+
+![Diagram UML](./Images/diagram_klas.png)
 
 ---
 

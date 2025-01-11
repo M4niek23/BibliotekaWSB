@@ -8,7 +8,7 @@ namespace BibliotekaWSB.Models;
 
 public class Student : User
 {
-    public override string Role => "Student";
+    public override string Role => "Student"; // Rola użytkownika jest ona domyślna jako "Student"
     public string StudentNumeber { get; set; }
     public Student(int id, string username, string passwordHash, string fullName, string studentNumber, string email = "", string phone = "")
              : base(id, username, passwordHash, fullName, email, phone)

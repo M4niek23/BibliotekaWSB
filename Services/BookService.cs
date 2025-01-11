@@ -1,18 +1,12 @@
 ﻿
 using BibliotekaWSB.Interfaces;
 using BibliotekaWSB.Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BibliotekaWSB.Services;
 
 public class BookService
 {
-    private IBookRepository _bookRepository;
+    private IBookRepository _bookRepository; // Repozytorium książek
     public BookService(IBookRepository bookRepository)
     {
         _bookRepository = bookRepository;
@@ -28,6 +22,7 @@ public class BookService
 
     public IEnumerable<Book> SearchBooks(string query)
     {
+        // Szukanie książek po tytule lub autorze
         var books = _bookRepository.GetAll();
         return books.Where(b =>
             b.Title.Contains(query, StringComparison.OrdinalIgnoreCase) ||

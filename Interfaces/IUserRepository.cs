@@ -10,6 +10,6 @@ namespace BibliotekaWSB.Interfaces;
 
 public interface IUserRepository : IRepository<User>
 {
-    User GetByUsername(string username);
+    User GetByUsername(string username); // Metoda wyszukiwania użytkowników po loginie
     void Update(User loggedUser);
 }

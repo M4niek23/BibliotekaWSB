@@ -9,14 +9,14 @@ namespace BibliotekaWSB.Models;
 
 public class Book
 {
-    public int Id { get; private set; }
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public int Availability { get; set; }
+    public int Id { get; private set; } // Id ksiązki 
+    public string Title { get; set; } // Tytuł książki
+    public string Author { get; set; } // Autor książki
+    public int Availability { get; set; } // Liczba dostępnych egzemplarzy
 
-    public string Category { get; set; }
+    public string Category { get; set; } // Kategoria książki
 
-    public string Description { get; set; }
+    public string Description { get; set; } // Opis książki
 
 
 

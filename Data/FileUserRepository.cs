@@ -10,9 +10,9 @@ namespace BibliotekaWSB.Data;
 
 public class FileUserRepository : IUserRepository
 {
-    private string _filePath = "users.json";
+    private string _filePath = "users.json"; // Ścieżka do pliku z użytkownikami
 
-    
+    // Pomocnicza klasa DTO do zapisu/odczytu JSON
     private class UserDto
     {
         public int Id { get; set; }
@@ -27,12 +27,13 @@ public class FileUserRepository : IUserRepository
         public string Position { get; set; } 
     }
 
-    private List<User> _users;
+    private List<User> _users; // Lista użytkowników w pamięci
 
     public FileUserRepository()
     {
         if (File.Exists(_filePath))
         {
+            // Odczyt z pliku JSON lub inicjalizacja pustą listą
             var json = File.ReadAllText(_filePath);
             var dtos = JsonSerializer.Deserialize<List<UserDto>>(json) ?? new List<UserDto>();
             _users = dtos.Select(ToUser).ToList();
@@ -44,13 +45,14 @@ public class FileUserRepository : IUserRepository
         }
     }
 
-    private void Save()
+    private void Save() // Zapis do users.json
     {
         var dtos = _users.Select(ToDto).ToList();
         var json = JsonSerializer.Serialize(dtos, new JsonSerializerOptions { WriteIndented = true });
         File.WriteAllText(_filePath, json);
     }
 
+    // Konwersja z User na UserDto (do zapisu)
     private UserDto ToDto(User user)
     {
 
@@ -78,6 +80,7 @@ public class FileUserRepository : IUserRepository
         return dto;
     }
 
+    // Konwersja z UserDto na User (po odczycie)
     private User ToUser(UserDto dto)
     {
         if (dto.Role == "Student")

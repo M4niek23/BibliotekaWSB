@@ -10,11 +10,12 @@ namespace BibliotekaWSB.Data;
 
 public class FileRentalRepository : IRentalRepository
 {
-    private string _filePath = "rentals.json";
-    private List<Rental> _rentals;
+    private string _filePath = "rentals.json"; // Ścieżka do pliku json z książkami
+    private List<Rental> _rentals; // Wewnętrzna lista wypożyczeń w pamięci
 
     public FileRentalRepository()
     {
+        // Inicjalizacja z pliku JSON lub pustej listy
         if (File.Exists(_filePath))
         {
             var json = File.ReadAllText(_filePath);
@@ -27,7 +28,7 @@ public class FileRentalRepository : IRentalRepository
         }
     }
 
-    private void Save()
+    private void Save() // Zapis do pliku rentals.json
     {
         var json = JsonSerializer.Serialize(_rentals, new JsonSerializerOptions { WriteIndented = true });
         File.WriteAllText(_filePath, json);
@@ -39,9 +40,10 @@ public class FileRentalRepository : IRentalRepository
         Save();
     }
 
-    public IEnumerable<Rental> GetAll() => _rentals;
+    public IEnumerable<Rental> GetAll() => _rentals; // Zwraca wszystkie wypożyczenia
 
-    public Rental GetById(int id) => _rentals.FirstOrDefault(r => r.Id == id);
+
+    public Rental GetById(int id) => _rentals.FirstOrDefault(r => r.Id == id); // Szukanie wypożyczenia po id
 
     public void Remove(Rental entity)
     {
@@ -56,6 +58,7 @@ public class FileRentalRepository : IRentalRepository
 
     public void Update(Rental rental)
     {
+        // Aktualizacja istniejącego wypożyczenia
         var existing = GetById(rental.Id);
         if (existing != null)
         {
