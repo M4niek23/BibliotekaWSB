@@ -53,7 +53,7 @@ Te dane umożliwiają logowanie do konta administratora i dostęp do zaawansowan
    - **StaffPanelWindow.xaml** – Panel pracownika umożliwiający zarządzanie książkami i wypożyczeniami.
 
 ---
-## Cel bizenesowy aplikacji
+## Cel biznesowy aplikacji
 **Głównym celem aplikacji jest usprawnienie obiegu książek w bibliotece.**
 **Dzięki aplikacji można:**
 1. Przeglądać listę książek i ich szczegóły
